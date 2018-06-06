@@ -9,15 +9,10 @@ module.exports = {
             text: 'hello word'
         },
         {
-            tag: 'button',
-            text: '查询',
-            attrs:{
-                "data-action": "query",
-                class: 'button primary',
-            },
-            nativeOn: {
-                'click': 'alert()'
-            }
+            type: 'component',
+            uiType: 'DatePicker',
+            label: '城市：',
+            config: {}
         },
         {
             tag: 'div',
@@ -38,9 +33,8 @@ module.exports = {
                     style: 'display: inline-block',
                     children: [
                         {
-                            tag: 'button',
-                            text: '点击',
-                            onClick: 'alert()'
+                            tag: 'label',
+                            text: '选择城市：'
                         },
                         {
                             type: 'component',
